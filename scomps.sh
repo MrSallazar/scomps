@@ -40,7 +40,6 @@ valida_temp (){
 	maxima=`cat teste1.txt | grep -i min | cut -d":" -f11 | sed 's/,//g;s/"//g;s/description//g'`
 	max1=`cat teste1.txt | grep -i max | cut -d":" -f14 | sed 's/,//g;s/"//g;s/min//g'`
 	min1=`cat teste1.txt | grep -i min | cut -d":" -f15 | sed 's/,//g;s/"//g;s/description//g'`
-	description1= `cat teste1.txt | grep -i description | cut -d":" -f16 | sed 's/"//g;s/}//g;s/{//g;s/,//g;s/date//g;'`
 	
 	max2=`cat teste1.txt | grep -i date | cut -d":" -f18 | sed 's/,//g;s/"//g;s/min//g'`
 	min2=`cat teste1.txt | grep -i date | cut -d":" -f19 | sed 's/,//g;s/"//g;s/description//g'`
